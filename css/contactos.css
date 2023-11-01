@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+.formulario-contacto-mapa {
+  padding: 0;
+  margin: 0;
+  font-family: "Signika Negative", sans-serif;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+
+.contactos-ventana {
+  width: 80%;
+  padding: 6vh 2.5vw 3vh;
+  background-color: #1c1b29;
+  color: #fafafa;
+  border: rgb(165, 224, 229) 5px solid;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 8vw;
+  margin-bottom: 12vh;
+  box-shadow: 0px 0px 10px 2px rgb(16, 27, 64, 85%);
+}
+
+.contactos-formulario {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contactos-formulario h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-nombre-apellido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 30px 0 10px;
+}
+
+.input-mail-asunto {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 10px 0;
+}
+
+.input-nombre-apellido input,
+.input-mail-asunto input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 1.15rem;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.text-area-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 30px;
+}
+
+.text-area-mensaje h3 {
+  margin: 15px 0;
+  font-size: 2rem;
+  color: #a0a0a0;
+}
+
+.text-area-mensaje textarea {
+  font-size: 1.3rem;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 225px;
+  resize: none;
+  border-radius: 20px;
+}
+
+/* Botones -Redes- */
+
+.botones-redes-inferiores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  filter: invert(1);
+  gap: 25px;
+  margin: 60px 0 0 30px;
+}
+
+.botones-redes-inferiores img {
+  width: 40px;
+  border: 2px solid black;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.botones-redes-inferiores h3 {
+  color: #a0a0a0;
+  filter: invert(1);
+  font-size: 2.2rem;
+}
+
+.botones-redes-inferiores h3 b{
+  position: relative;
+  top: 6px;
+  padding-right: 7px;
+}
+
+.frame-mapa {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.frame-mapa iframe {
+  width: 600px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+/* Boton -Enviar- */
+
+.boton-enviar {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+  margin: 20px 0 0;
+  padding: 10px 85px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: 3px solid #291224;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.boton-enviar:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 1525px){
+  .contactos-ventana{
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 1475px){
+  .contactos-ventana{
+    gap: 4rem;
+    width: 85%;
+  }
+
+  .input-nombre-apellido {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1300px){
+
+  .contactos-ventana{
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .input-nombre-apellido {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 1235px){
+
+  .frame-mapa iframe{
+    width: 525px;
+    height: 450px;
+    margin-right: 15px;
+  }
+
+  .input-nombre-apellido {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 1180px){
+
+  .frame-mapa iframe{
+    width: 475px;
+    height: 350px;
+  }
+
+  .contactos-formulario h1{
+    font-size: 3.8rem;
+  }
+
+  .botones-redes-inferiores h3 {
+    font-size: 1.8rem;
+  }
+
+  .botones-redes-inferiores{
+    gap: 15px;
+    margin: 40px 0 0 15px;
+  }
+}
+
+@media (max-width: 1050px){
+
+  .contactos-ventana{
+    flex-direction: column;
+  }
+
+  .contactos-ventana{
+    width: 85%;
+  }
+
+  .frame-mapa iframe{
+    width: 500px;
+    height: 425px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px){
+  .contactos-ventana{
+    gap: 6rem;
+  }
+
+  .frame-mapa iframe {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 695px){
+
+  .frame-mapa iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 580px){
+
+  .frame-mapa iframe {
+    width: 275px;
+    height: 225px;
+  }
+
+  .input-nombre-apellido{
+    grid-template-columns: none;
+    gap: 1.3rem;
+    margin: 0 0 10px;
+  }
+
+  .contactos-formulario h1{
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 450px){
+
+  .botones-redes-inferiores{
+    display: flex;
+    flex-wrap: wrap; 
+  }
+}
+
+@media (max-width: 415px){
+
+  .frame-mapa iframe {
+    width: 225px;
+    height: 225px;
+  }
+
+  .boton-enviar{
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    padding: 8px 65px;
+    box-shadow: 0 0 12px 5px #150d37;
+  }
+
+  .contactos-ventana{
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 330px){
+
+  .contactos-formulario h1{
+    font-size: 1.9rem;
+  }
+
+  .frame-mapa iframe {
+    width: 200px;
+    height: 200px;
+  }
+
+  .botones-redes-inferiores{
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botones-redes-inferiores h3 {
+    font-size: 1.6rem;
+  }
+
+  .text-area-mensaje h3 {
+    font-size: 1.6rem;
+  }
+
+  .contactos-ventana{
+    gap: 1.8rem;
+  }
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+  --color-text: #e3e3e3;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #d11601;
+  --card1-gradient-color2: #b68419;
+  --card2-gradient-color1: #0434c6;
+  --card2-gradient-color2: #5c8896;
+  --card3-gradient-color1: #ca8300;
+  --card3-gradient-color2: #b8b200;
+  --card4-gradient-color1: #5f01bf;
+  --card4-gradient-color2: #a504ba;
+  --card5-gradient-color1: #12159e;
+  --card5-gradient-color2: #294d8f;
+  --card6-gradient-color1: #8e210f;
+  --card6-gradient-color2: #dec100;
+  --card7-gradient-color1: #026730;
+  --card7-gradient-color2: #2dac88;
+  --card8-gradient-color1: #007b96;
+  --card8-gradient-color2: #cf8921;
+}
+
+.Ccard{
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-conocimiento{
+  width: 200px;
+  background-color: #1c1b29;
+  border-radius: 20px;
+  border: 5px solid #1c1b29;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.card-conocimiento:hover{
+  transform: scale(1.07);
+}
+
+.card-cabecera{
+  height: 190px;
+  width: 100%;
+  background: red;
+  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.card-cabecera i{
+  color: #fff;
+  font-size: 90px;
+}
+
+.img-conocimientos{
+  width: 100%;
+}
+
+.card-contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.card-botones{
+  border: none;
+  border-radius: 100px;
+  padding: 5px 30px;
+  color: #fff;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.card-cabecera.uno{
+  background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+.card-botones.uno{
+  background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-cabecera.dos{
+  background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+.card-botones.dos{
+  background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-cabecera.tres{
+  background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+.card-botones.tres{
+  background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-cabecera.cuatro{
+  background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+.card-botones.cuatro{
+  background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-cabecera.cinco{
+  background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+.card-botones.cinco{
+  background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-cabecera.seis{
+  background: linear-gradient(to bottom left, var(--card6-gradient-color1), var(--card6-gradient-color2));
+}
+.card-botones.seis{
+  background: linear-gradient(to left, var(--card6-gradient-color1), var(--card6-gradient-color2));
+}
+
+.card-cabecera.siete{
+  background: linear-gradient(to bottom left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}
+.card-botones.siete{
+  background: linear-gradient(to left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}
+
+.card-cabecera.ocho{
+  background: linear-gradient(to bottom left, var(--card8-gradient-color1), var(--card8-gradient-color2));
+}
+.card-botones.ocho{
+  background: linear-gradient(to left, var(--card8-gradient-color1), var(--card8-gradient-color2));
+}
+
+.card-cabecera.nueve{
+  background: linear-gradient(to bottom left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}
+.card-botones.nueve{
+  background: linear-gradient(to left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}
+
+.card-cabecera.doce{
+  background: linear-gradient(to bottom left, var(--card7-gradient-color1), var(--card7-gradient-color2));
+}
+.card-botones.doce{
+  background: linear-gradient(to left, var(--card7-gradient-color1), var(--card7-gradient-color2));
+}
+
+.card-cabecera.trece{
+  background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+.card-botones.trece{
+  background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}

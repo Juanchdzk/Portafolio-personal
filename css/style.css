@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap");
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  /* -- Fuentes de letra -- */
+  --merriweather_Sans: "Merriweather Sans", sans-serif;
+  --handjet: "Handjet", cursive;
+
+  /* -- Colores -- */
+  --lila: rgb(150 33 222);
+  --celeste_claro: rgb(96 231 252);
+  --fondo_pantalla_superior: rgb(128 28 128);
+  --azul_normal: rgb(33 94 222);
+  --fondo_pantalla_inferior: rgb(31, 31, 56);
+  --azul_claro_sombra: rgb(19 139 248);
+  --blanco_letras: rgb(247 247 247);
+}
+
+img {
+  pointer-events: none;
+}
+
+.titulo-section {
+  font-family: var(--handjet);
+  font-size: 6rem;
+  margin: 15vh 0;
+  letter-spacing: 10px;
+  color: var(--blanco_letras);
+  text-align: center;
+  text-shadow: -5px 2px 6px var(--azul_claro_sombra);
+}
+
+.main-fondo {
+  background-image: url(../img/candy-wallpaper-1920x1200_6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* -- Header -- */
+
+.header-principal {
+  background-image: url(../img/1138740.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-header {
+  position: absolute;
+  top: 0;
+}
+
+/* 
+-- Navegación 
+*/
+
+.navegacion {
+  display: flex;
+  z-index: 10;
+  position: relative;
+  padding: 15px 3rem 10px;
+  justify-content: space-between;
+  font-family: var(--merriweather_Sans);
+  font-size: 26px;
+  align-items: center;
+  color: azure;
+
+  /* Fondo navegación */
+  background: rgba(252, 252, 252, 0.15);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(252, 252, 252, 0.15) 0%,
+    rgba(255, 224, 102, 0.34) 48%,
+    rgba(253, 160, 236, 0.55) 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, rgba(252, 252, 252, 0.15)),
+    color-stop(48%, rgba(255, 224, 102, 0.34)),
+    color-stop(100%, rgba(253, 160, 236, 0.55))
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(252, 252, 252, 0.15) 0%,
+    rgba(255, 224, 102, 0.34) 48%,
+    rgba(253, 160, 236, 0.55) 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(252, 252, 252, 0.15) 0%,
+    rgba(255, 224, 102, 0.34) 48%,
+    rgba(253, 160, 236, 0.55) 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(252, 252, 252, 0.15) 0%,
+    rgba(255, 224, 102, 0.34) 48%,
+    rgba(253, 160, 236, 0.55) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(252, 252, 252, 0.15) 0%,
+    rgba(255, 224, 102, 0.34) 48%,
+    rgba(253, 160, 236, 0.55) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fda0ec', GradientType=1 );
+
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.portafolio-nav {
+  color: aliceblue;
+}
+
+.navegacion-ul {
+  display: flex;
+  position: relative;
+}
+
+.navegacion-ul-elemento {
+  padding-right: 30px;
+}
+
+.navegacion-ul-elemento:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Boton subir */
+
+.ir-navegacion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: #1cafb6;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50px;
+  z-index: 30;
+}
+
+.ir-navegacion img{
+  filter: invert(1);
+}
+
+/* Responsivo */
+
+@media (max-width: 680px){
+  .titulo-section{
+    font-size: 4rem;
+    letter-spacing: 7px;
+  }
+}
+
+@media (max-width: 475px){
+  .titulo-section{
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 425px){
+  .titulo-section{
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 345px){
+  .titulo-section{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 375px){
+  .titulo-section{
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+}

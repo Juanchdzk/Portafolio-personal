@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.content{
+    margin-top: 100px;
+}
+
+.pantalla-wraper-descripcion{
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.primer-texto{
+    font-size: 7rem;
+}
+
+.content-titulo-portafolio{
+    font-size: 5rem;
+    line-height: 20vh;
+}
+
+.content-titulo-portafolio h1>b{
+    color: rgb(13, 182, 13);
+    text-shadow: 1px -2px 10px #357537, -1px 2px 10px #3895a5;
+    filter: blur(0.5px);
+}
+
+.wrapper-descripcion{
+    display: inline-flex;
+}
+
+.wrapper-descripcion .primer-texto{
+    font-size: 4.5rem;
+    padding: 10px 0;
+}
+
+.wrapper-descripcion .texto-dinamico{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.texto-dinamico li{
+    display: flex;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 5rem;
+    color: rgb(0, 238, 255);
+    list-style: none;
+    position: relative;
+    top: 0;
+    padding: 0 20px;
+    text-shadow: 0 0 10px rgb(31 159 167);
+    animation: slide 3s steps(2) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -180px;
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 1585px){
+    .content-titulo-portafolio{
+        line-height: 10vh;
+    }
+}
+
+@media (max-width: 1360px){
+
+    .primer-texto{
+        font-size: 5.2rem;
+        position: relative;
+        top: 14px;
+    }
+
+    .content-titulo-portafolio{
+        font-size: 4.3rem;
+        line-height: 8vh;
+    }
+
+    .wrapper-descripcion .primer-texto{
+        font-size: 3.8rem;
+        padding: 0;
+    }
+
+    .texto-dinamico li{
+        font-size: 3.8rem;
+    }
+}
+
+
+@media (max-width: 1260px){
+
+    .container{
+        width: 85%;
+        left: 10%;
+    }
+
+    .pantalla-wraper-descripcion{
+        justify-content: flex-start;
+    }
+
+    .content-titulo-portafolio h1{
+        width: 95%;
+        text-align: start;
+    }
+
+    .primer-texto{
+        font-size: 5rem;
+        position: relative;
+        top: 20px;
+    }
+
+    .content-titulo-portafolio{
+        font-size: 3.5rem;
+        line-height: 8vh;
+    }
+
+    .wrapper-descripcion .primer-texto{
+        font-size: 3rem;
+    }
+
+    .texto-dinamico li{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 970px){
+
+    .content{
+        margin-top: 150px;
+    }
+
+    .content-titulo-portafolio h1{
+        width: 90%;
+    }
+
+    .primer-texto{
+        font-size: 3rem;
+        top: 25px;
+    }
+
+    .content-titulo-portafolio{
+        font-size: 2.5rem;
+        line-height: 8vh;
+    }
+
+    .wrapper-descripcion .primer-texto{
+        font-size: 2.5rem;
+    }
+
+    .texto-dinamico li{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 775px){
+
+    .content{
+        margin-top: 175px;
+    }
+
+    .content-titulo-portafolio h1{
+        width: 87%;
+    }
+
+    .primer-texto{
+        font-size: 2.5rem;
+        top: 0;
+    }
+
+    .content-titulo-portafolio{
+        font-size: 2rem;
+        line-height: 6.3vh;
+    }
+
+    .wrapper-descripcion .primer-texto{
+        font-size: 2rem;
+        position: relative;
+        line-height: 6vh;
+        padding: 2.7px 0;
+    }
+
+    .wrapper-descripcion .texto-dinamico{
+        position: relative;
+        bottom: 15px;  
+    }
+
+    .texto-dinamico li{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 630px){
+
+    .content{
+        margin-top: 200px;
+    }
+
+    .content-titulo-portafolio h1{
+        width: 85%;
+    }
+
+    .primer-texto{
+        font-size: 2.3rem;
+        top: 0;
+    }
+
+    .content-titulo-portafolio{
+        font-size: 1.7rem;
+    }
+
+    .wrapper-descripcion .primer-texto{
+        font-size: 1.7rem;
+        padding: 1px 0;
+    }
+
+    .texto-dinamico li{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 550px){
+
+    .content{
+        margin-top: 90px;
+    }
+
+    .wrapper-descripcion .texto-dinamico{
+        height: 90px;
+        line-height: 45px;
+        overflow: visible;
+    }
+
+    .texto-dinamico li{
+        animation: none;
+        text-align: start;
+        padding: 0;
+        list-style: armenian;
+    }
+
+    .wrapper-descripcion{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .wrapper-descripcion .texto-dinamico{
+        top: 7px;  
+    }
+}
+
+@media (max-width: 410px){
+
+    .content{
+        margin-top: 60px;
+    }
+
+    .primer-texto{
+        font-size: 1.8rem;
+        top: 0;
+    }
+
+    .content-titulo-portafolio{
+        font-size: 1.3rem;
+    }
+
+    .wrapper-descripcion .primer-texto{
+        font-size: 1.3rem;
+    }
+
+    .texto-dinamico li{
+        font-size: 1.3rem;
+    }
+}
