@@ -165,6 +165,7 @@
 
   .imagen-foto{
     width: 200px;
+    height: 210px;
     border: 6px solid var(--azul_normal);
     outline: 8px solid var(--celeste_claro);
   }
