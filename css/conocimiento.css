@@ -27,7 +27,6 @@
   width: 90vw;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
@@ -57,7 +56,6 @@
   border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
   display: grid;
   place-items: center;
-
 }
 
 .card-cabecera i{
@@ -161,4 +159,12 @@
 }
 .card-botones.trece{
   background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+/* Responsive */
+
+@media (max-width: 1600px){
+  .Ccard{
+    justify-content: center;
+  }
 }
