@@ -1,10 +1,10 @@
 :root {
-  --azul_normal: rgb(33 94 222);
-  --celeste_claro: rgb(96 231 252);
+  --azul_normal: rgb(47 109 239);
+  --azul_oscuro: rgb(29 39 185);
 }
 
 .sobremi-foto-descripcion {
-  background-image: url(../img/fondo-gradiente.jpg);
+  background-image: url(../img/774364.jpg);
   background-size: cover;
   display: flex;
   max-width: 95%;
@@ -28,9 +28,9 @@
   width: 300px;
   height: 310px;
   border-radius: 100%;
-  border: 8px solid var(--azul_normal);
+  border: 10px solid var(--azul_oscuro);
   outline-offset: 3px;
-  outline: 10px solid var(--celeste_claro);
+  outline: 8px solid var(--azul_normal);
   position: relative;
 }
 
